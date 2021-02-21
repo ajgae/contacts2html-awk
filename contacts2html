@@ -1,0 +1,26 @@
+#!/usr/bin/awk -f
+
+BEGIN {
+    print "\
+<style>\n\
+table, th, td {\n\
+    border: 1px solid black;\n\
+    border-collapse: collapse;\n\
+    padding: 15px;\n\
+}\n\
+</style>"
+    print "<table>"
+    FS=","
+}
+
+/\S+/ {
+    print "<tr>"
+    for (i = 1; i <= NF; ++i) {
+        print "<td>" $i "</td>"
+    }
+    print "</tr>"
+}
+
+END {
+    print "</table>"
+}
