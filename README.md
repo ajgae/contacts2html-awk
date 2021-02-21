@@ -1,4 +1,4 @@
-# `contacts2html`
+# contacts2html
 
 An `awk` implementation of @Sosol02's [`contacts2html`](https://github.com/Sosol02/contacts2html). Because why not :)
 
